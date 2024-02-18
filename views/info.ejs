@@ -1,0 +1,53 @@
+<html lang="en">
+    <%-include('./partials/head.ejs')%>
+
+<body>
+    <%-include('./partials/nav.ejs')%>
+
+    <h1 class="fs-4 text-center p-3">More information about our users: <span class="fw-bold">Is Aside:</span></h1>
+    <div class="offcanvas offcanvas-start show p-3" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Partial Information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-warning-subtle">
+          Users have accessed this site for a very long time.
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Users who frequently visit site
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show bg-warning-subtle" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>These are users who frequently assess this site.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Users who hardly visit site.
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse bg-warning-subtle" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>These are the ones who hardly assess this site.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <figure class="figure">
+        <img src="/img/stats.png" class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption text-end">A sample user.</figcaption>
+      </figure>
+
+    <%-include('./partials/foot.ejs')%>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
